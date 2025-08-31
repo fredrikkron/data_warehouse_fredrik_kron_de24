@@ -209,6 +209,7 @@ __marimo__/
 *.DS_Store
 
 setup_roles.sql
+extract_loader.sql
 
 # dlt
 **/.dlt/
