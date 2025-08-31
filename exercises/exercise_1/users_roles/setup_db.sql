@@ -1,0 +1,13 @@
+USE ROLE SYSADMIN;
+
+CREATE DATABASE ifood_db;
+
+CREATE WAREHOUSE marketing_wh
+WITH
+WAREHOUSE_SIZE = 'XSMALL'
+AUTO_SUSPEND = 60
+AUTO_RESUME = TRUE
+INITIALLY_SUSPENDED = TRUE
+COMMENT = 'Warehouse for training setting up users and roles';
+
+CREATE SCHEMA IF NOT EXISTS ifood_db.staging;
