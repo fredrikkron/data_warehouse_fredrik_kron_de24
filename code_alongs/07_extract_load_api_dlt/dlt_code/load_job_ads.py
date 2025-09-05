@@ -34,7 +34,7 @@ if __name__ == "__main__":
     working_directory = Path(__file__).parent
     os.chdir(working_directory)
 
-    query = "data engineer"
+    query = ""
     table_name = "data_field_job_ads"
 
     run_pipeline(query, table_name)
