@@ -2,6 +2,7 @@ with stg_job_ads as (select * from {{ source('job_ads', 'stg_ads') }})
 
 select
     occupation__label,
+    id as auxilliary_attributes_id,
     number_of_vacancies AS vacancies,
     relevance,
     application_deadline
