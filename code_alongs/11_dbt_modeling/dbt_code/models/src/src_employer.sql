@@ -1,7 +1,7 @@
 with stg_job_ads as (select * from {{ source('job_ads', 'stg_ads') }})
 
 select
-    -- employer_id?
+    -- (employer__workplace, workplace_address__municipality) AS employer_id?
     employer__name,
     employer__workplace,
     employer__organization_number,

@@ -1,7 +1,7 @@
 with stg_job_ads as (select * from {{ source('job_ads', 'stg_ads') }})
 
 select
-    -- job_details_id?
+    id AS job_details_id,
     headline,
     description__text,
     description__text_formatted,
