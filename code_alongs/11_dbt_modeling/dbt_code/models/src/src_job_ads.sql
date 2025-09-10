@@ -2,6 +2,9 @@ with stg_job_ads as (select * from {{ source('job_ads', 'stg_ads') }})
 
 select
     occupation__label,
+    id as job_details_id,
+    employer__workplace,
+    coalesce(workplace_address__municipality, 'Unknown_Municipality') as workplace_address__municipality,
     id as auxilliary_attributes_id,
     number_of_vacancies AS vacancies,
     relevance,
