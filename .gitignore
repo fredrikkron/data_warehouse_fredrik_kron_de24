@@ -214,3 +214,14 @@ setup_user.sql
 
 # dlt
 **/.dlt/
+
+# duckdb
+*.duckdb
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+#dagster
+**/.tmp*/
